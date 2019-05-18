@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import {Button} from "reactstrap";
+import { Button } from "reactstrap";
+import { FaBeer } from "react-icons/fa";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           Learn React
         </a>
         <Button>test</Button>
+        <FaBeer />
       </header>
     </div>
   );
