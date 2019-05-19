@@ -1,19 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Example from "./josh/Navbar";
-import { Button } from "reactstrap";
-import Jumbrotron from "./Shawn/Jumbotron";
-import { PageSection } from "./james/pageSection/pageSection";
+import { Switch, Router, Route } from "react-router";
+import { createBrowserHistory } from "history";
+import { Home } from "./james/home/home"
+
+const history = createBrowserHistory();
 
 function App() {
   return (
-    <div className="App">
-      <Example />
-      <div></div>
-      <Jumbrotron />
-      <PageSection/>
-    </div>
+    <Router history={history}>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+      </Switch>
+    </Router>
   );
 }
 

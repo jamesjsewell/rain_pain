@@ -1,0 +1,51 @@
+.wrapper{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.raindrop-logo{
+    background: url('./raindrop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    margin: auto;
+}
+
+.title-wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.down-button {
+    z-index: 200;
+    position: absolute;
+    bottom: 100px;
+    width: 50px;
+    height: 50px;
+    color: #006B99;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-section {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
