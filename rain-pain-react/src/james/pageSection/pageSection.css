@@ -1,0 +1,79 @@
+
+.houston {
+    width: 100vw;
+    height: 400px;
+    background-image: url("./houston.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    background-color: #dcf0fa;
+
+}
+
+.waves {
+    background-color: #40c8f1;
+    height: 100px;
+
+}
+
+.waveBottom {
+    animation: nudge 10s linear infinite alternate;
+    width: 120vw;
+    position: absolute;
+    background-image: url("./wave-bottom.svg");
+    background-repeat: repeat-x;
+    height: 50px;
+    left: -20px;
+    z-index: 2;
+    bottom: -10px;
+}
+
+.house {
+    animation: house 80s linear infinite alternate;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+    background-image: url("./house.svg");
+    bottom: 0px;
+}
+
+.waveTop {
+    animation: nudge 5s linear infinite alternate;
+    transform: rotateX(20deg);
+    position: absolute;
+    background-image: url("./wave-top.svg");
+    background-repeat: repeat-x;
+    width: 120vw;
+    height: 50px;
+    z-index: 4;
+    left: -20px;
+    bottom: -20px;
+}
+
+@keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(10px, 0);
+    }
+
+    80% {
+      transform: translate(-10px, 0);
+    }
+}
+
+@keyframes house {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(100vw, 0);
+    }
+}
+
+
