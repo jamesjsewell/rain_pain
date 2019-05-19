@@ -1,11 +1,11 @@
 import React from "react";
-import "./about.css"
+import "./about.css";
 
 export const About = () => (
     <div className="about-component">
 
         <div className="about-content_wrapper">
-            <h1>About the Project</h1>
+            <h1 className="about-title">About the Project</h1>
             <div className="image-wrapper"><img src="https://cdn.cnn.com/cnnnext/dam/assets/170829182744-23-harvey-0829-exlarge-169.jpg" /></div>
         </div>
         <div className="about-info">
@@ -19,4 +19,4 @@ export const About = () => (
 
         </div>
     </div>
-)
+);

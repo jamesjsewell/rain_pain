@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "reactstrap";
 import { Map } from "../map/map";
 import { FloodBackground } from "../floodBackground/floodBackground";
+import { About } from "../../josh/About/About";
 import { FaChevronDown, FaChevronCircleUp } from "react-icons/fa";
 
 import "./home.css";
@@ -45,6 +46,18 @@ export class Home extends React.Component {
     render() {
         return (
             <div className="wrapper">
+                <div className="navbar">
+                    <Link to="homeSection" spy={true} smooth={true} duration={500}>
+                        <h5>Home</h5>
+                    </Link>
+                    <Link to="aboutSection" spy={true} smooth={true} duration={500}>
+                        <h5>About</h5>
+                    </Link>
+                    <Link to="mapSection" spy={true} smooth={true} duration={500}>
+                        <h5>Map</h5>
+                    </Link>
+                </div>
+                <Element name="homeSection">
                 <div>
                     <div className="title-wrapper">
                         <Link to="mapSection" spy={true} smooth={true} duration={500}>
@@ -56,7 +69,12 @@ export class Home extends React.Component {
                         </div>
                         <FloodBackground />
                     </div>
-                </div>
+                    </div>
+                </Element>
+
+                <Element name="aboutSection">
+                    <About />
+                </Element>
 
                 <Element name="mapSection">
                     <div className="about-section">
