@@ -1,7 +1,7 @@
 
 .houston {
     width: 100vw;
-    height: 400px;
+    height: 100vh;
     background-image: url("./houston.svg");
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 }
 
 .waves {
-    background-color: #40c8f1;
+    background-color: #45CFFF;
     height: 100px;
 
 }

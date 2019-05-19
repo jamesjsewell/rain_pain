@@ -1,6 +1,6 @@
 import React from "react";
-import "./pageSection.css";
-export const PageSection = () => (
+import "./floodBackground.css";
+export const FloodBackground = () => (
     <div>
         <div className="houston">
             <div className="waveTop" />
