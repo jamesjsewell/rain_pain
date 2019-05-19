@@ -12,6 +12,7 @@ import {
     DropdownMenu,
     DropdownItem
 } from 'reactstrap';
+import "./Navbar.css"
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -30,7 +31,7 @@ export default class Example extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="dark" dark expand="md">
+                <Navbar className="navbar" dark expand="md">
                     <NavbarBrand href="/">RainPain</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
