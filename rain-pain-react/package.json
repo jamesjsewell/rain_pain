@@ -9,7 +9,8 @@
     "react-router": "^5.0.0",
     "react-scripts": "3.0.1",
     "react-scroll": "^1.7.11",
-    "reactstrap": "^8.0.0"
+    "reactstrap": "^8.0.0",
+    "tableau-api": "^2.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
