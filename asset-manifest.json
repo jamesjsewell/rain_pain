@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/rain_pain/static/css/main.61a22544.chunk.css",
+    "main.js": "/rain_pain/static/js/main.fd6ea3f3.chunk.js",
+    "main.js.map": "/rain_pain/static/js/main.fd6ea3f3.chunk.js.map",
+    "runtime~main.js": "/rain_pain/static/js/runtime~main.bf3bcf5d.js",
+    "runtime~main.js.map": "/rain_pain/static/js/runtime~main.bf3bcf5d.js.map",
+    "static/js/2.d94b0558.chunk.js": "/rain_pain/static/js/2.d94b0558.chunk.js",
+    "static/js/2.d94b0558.chunk.js.map": "/rain_pain/static/js/2.d94b0558.chunk.js.map",
+    "index.html": "/rain_pain/index.html",
+    "precache-manifest.e2b4cbe1280e110f5a765de8f494f318.js": "/rain_pain/precache-manifest.e2b4cbe1280e110f5a765de8f494f318.js",
+    "service-worker.js": "/rain_pain/service-worker.js",
+    "static/css/main.61a22544.chunk.css.map": "/rain_pain/static/css/main.61a22544.chunk.css.map",
+    "static/media/floodBackground.css": "/rain_pain/static/media/wave-top.5a56a1a1.svg",
+    "static/media/home.css": "/rain_pain/static/media/raindrop.d580db84.svg"
+  }
+}
