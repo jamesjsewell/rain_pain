@@ -1,7 +1,9 @@
 import React from "react";
 import { Button } from "reactstrap";
+import { Map } from "../map/map";
 import { FloodBackground } from "../floodBackground/floodBackground";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronCircleUp } from "react-icons/fa";
+
 import "./home.css";
 
 // ES6 Imports
@@ -18,7 +20,6 @@ export class Home extends React.Component {
     }
 
     componentDidMount() {
-
         Events.scrollEvent.register( "begin", ( to, element ) => {
             console.log( "begin", to );
         } );
@@ -41,69 +42,32 @@ export class Home extends React.Component {
         scroll.scrollToTop();
     }
 
-    scrollToBottom() {
-        scroll.scrollToBottom();
-    }
-
-    scrollTo() {
-        scroll.scrollTo( 100 );
-    }
-
-    scrollMore() {
-        scroll.scrollMore( 100 );
-    }
-
-    handleSetActive = ( to ) => {
-        console.log( to );
-    }
     render() {
         return (
             <div className="wrapper">
                 <div>
                     <div className="title-wrapper">
-                        <Link to="aboutSection" spy={true} smooth={true} duration={500}>
+                        <Link to="mapSection" spy={true} smooth={true} duration={500}>
                             <FaChevronDown className="down-button" />
                         </Link>
                         <div className="title-contents">
-                            <h2>RAIN PAIN</h2>
-                            <span className="raindrop-logo"></span>
+                            <h1>RAIN PAIN</h1>
+                            <div className="raindrop-logo"></div>
                         </div>
                         <FloodBackground />
                     </div>
                 </div>
 
-                 <Element name="aboutSection">
+                <Element name="mapSection">
                     <div className="about-section">
-                        {!this.state.hideTopButton ? <a onClick={this.scrollToTop}>To the top!</a> : null}
+                        {!this.state.hideTopButton ?
+                            <a className="top-button-wrapper" onClick={() => this.scrollToTop()}>
+                                <FaChevronCircleUp className="top-button" /></a> : null}
+                        <Map/>
                     </div>
                 </Element>
-
-                <br />
-                <a onClick={this.scrollToBottom}>To the bottom!</a>
-                <br />
-                <a onClick={this.scrollTo}>Scroll to 100px from the top</a>
 
             </div>
         );
     }
 }
-
-{/* <Element name="secondInsideContainer">
-            second element inside container
-          </Element>
-
-<Link className="test6" to="anchor" spy={true} smooth={true} duration={500}>
-Test 6 (anchor)
-</Link> */}
-
-{/* <div>
-        <div className="title-wrapper">
-            <Button><FaChevronDown className="down-button" /></Button>
-            <div className="title-contents">
-                <h2>RAIN PAIN</h2>
-                <span className="raindrop-logo"></span>
-            </div>
-            <FloodBackground />
-        </div>
-     </div>*/}
-
